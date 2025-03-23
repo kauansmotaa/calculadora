@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
 }
+
 .calculator {
     background: #fff;
     padding: 20px;
@@ -14,6 +15,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .display {
     width: 100%;
     height: 50px;
@@ -24,11 +26,13 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
 }
+
 button {
     padding: 15px;
     font-size: 1.2em;
@@ -37,13 +41,16 @@ button {
     background: #ddd;
     border-radius: 5px;
 }
+
 button:active {
     background: #bbb;
 }
+
 .operator {
     background: #ff9500;
     color: white;
 }
+
 .operator:active {
     background: #cc7700;
 }
