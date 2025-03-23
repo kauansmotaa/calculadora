@@ -5,6 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
+    margin: 0;
 }
 .calculator {
     background: #fff;
@@ -20,6 +21,8 @@ body {
     text-align: right;
     margin-bottom: 10px;
     padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .buttons {
     display: grid;

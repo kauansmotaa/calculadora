@@ -6,13 +6,13 @@
     <title>Calculadora Avançada</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="init()">
     <div class="calculator">
         <input type="text" class="display" id="display" disabled>
         <div class="buttons">
             <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('^')">^</button>
-            <button onclick="appendToDisplay('sqrt(')">√</button>
+            <button onclick="appendToDisplay('**')">^</button>
+            <button onclick="appendToDisplay('Math.sqrt(')">√</button>
             <button class="operator" onclick="appendToDisplay('/')">/</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
