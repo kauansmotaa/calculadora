@@ -43,6 +43,6 @@ p {
 }
 
 .img {
-background-image: -moz-element();
+background-image: url(img.png)
 
 }
