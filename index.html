@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Cliques</title>
+    <title>Contador de Cliques Premium</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <img ="img.png" alt="" class="img">
     <div class="container">
-        <h1>Contador de Cliques</h1>
-        <p>Cliques: <span id="click-count">0</span></p>
-        <button id="click-button">Clique aqui!</button>
+        <div class="counter-box">
+            <div class="counter-display" id="counter">0</div>
+            <div class="counter-controls">
+                <button class="btn click-btn" id="clickBtn">
+                    <i class="fas fa-hand-pointer"></i> Clique Aqui!
+                </button>
+                <button class="btn reset-btn" id="resetBtn">
+                    <i class="fas fa-redo"></i> Reiniciar
+                </button>
+            </div>
+            <div class="counter-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Cliques por segundo:</span>
+                    <span class="stat-value" id="cps">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Recorde:</span>
+                    <span class="stat-value" id="record">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="particles-container" id="particles"></div>
     </div>
     <script src="java.js"></script>
 </body>
