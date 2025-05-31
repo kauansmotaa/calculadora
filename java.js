@@ -57,4 +57,4 @@ document.addEventListener('DOMContentLoaded', function() {
         particle.style.top = `${y - size/2}px`;
         
         // Cor aleatória
-        const colors = ['#fd79a8', '#a29bfe', '#74b9ff', '#55efc]
+        const colors = ['#fd79a8', '#a29bfe', '#74b9ff', '#55efc  ]
