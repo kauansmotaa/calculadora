@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Contador de Cliques</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="counter-box">
-            <h1>Super Contador</h1>
-            <div class="counter-display" id="counter">0</div>
-            <button class="click-btn" id="clickBtn">CLIQUE AQUI!</button>
-            
-            <div class="stats">
-                <div class="stat-box">
-                    <i class="fas fa-bolt"></i>
-                    <span id="clicksPerSecond">0</span>
-                    <p>Cliques/s</p>
-                </div>
-                <div class="stat-box">
-                    <i class="fas fa-trophy"></i>
-                    <span id="highestSpeed">0</span>
-                    <p>Recorde</p>
-                </div>
-            </div>
-            
-            <div class="controls">
-                <button class="control-btn" id="resetBtn">
-                    <i class="fas fa-redo"></i> Reiniciar
-                </button>
-                <button class="control-btn" id="saveBtn">
-                    <i class="fas fa-save"></i> Salvar
-                </button>
-                <button class="control-btn" id="loadBtn">
-                    <i class="fas fa-folder-open"></i> Carregar
-                </button>
-            </div>
+        <h1>Contador de Cliques</h1>
+        <div class="counter-display" id="counter">0</div>
+        <button class="click-btn" id="clickBtn">CLIQUE AQUI!</button>
+        
+        <div class="controls">
+            <button class="control-btn" id="incrementBtn"><i class="fas fa-plus"></i></button>
+            <button class="control-btn" id="decrementBtn"><i class="fas fa-minus"></i></button>
+            <button class="control-btn" id="resetBtn"><i class="fas fa-redo"></i></button>
         </div>
         
-        <div class="upgrades">
-            <h2>Power-ups</h2>
-            <div class="upgrade" id="autoClicker">
-                <h3>Auto Clicker <span class="level">Nível 0</span></h3>
-                <p>Cliques automáticos a cada segundo</p>
-                <button class="upgrade-btn">Melhorar (10 cliques)</button>
+        <div class="stats">
+            <div class="stat-box">
+                <span>Máximo:</span>
+                <span id="maxCount">0</span>
             </div>
-            <div class="upgrade" id="clickMultiplier">
-                <h3>Multiplicador <span class="level">Nível 0</span></h3>
-                <p>Aumenta o valor de cada clique</p>
-                <button class="upgrade-btn">Melhorar (25 cliques)</button>
+            <div class="stat-box">
+                <span>Mínimo:</span>
+                <span id="minCount">0</span>
             </div>
         </div>
     </div>
