@@ -124,14 +124,18 @@ document.addEventListener('DOMContentLoaded', () => {
             confettiContainer.appendChild(confetti);
         }
     }
-
-
-
-
-
-
-
-
-
-
     
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Space') {
+            e.preventDefault();
+            clickBtn.click();
+        } else if (e.key === '+') {
+            incrementBtn.click();
+        } else if (e.key === '-') {
+            decrementBtn.click();
+        } else if (e.key === '0') {
+            resetBtn.click();
+        }
+    });
+});
